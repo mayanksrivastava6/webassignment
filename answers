@@ -1,0 +1,125 @@
+Here are the answers to the questions except for Q2 and Q3:
+
+---
+
+**Q1) What is HTML, and how is an HTML document structured?**
+
+**HTML (HyperText Markup Language)** is the standard language used to create and structure content on the web. It defines the structure of web pages using elements, which are represented by tags. These tags are used to create headings, paragraphs, links, images, and other elements of a webpage.
+
+### Structure of an HTML Document:
+1. `<!DOCTYPE html>`: Declares the document type as HTML5.
+2. `<html>`: The root element of an HTML document.
+3. `<head>`: Contains meta-information (metadata) about the document, such as the title, character set, stylesheets, etc.
+4. `<title>`: Sets the title of the web page, shown in the browser tab.
+5. `<body>`: Contains the actual content of the webpage, such as headings, paragraphs, images, links, tables, forms, etc.
+
+**Basic HTML document structure:**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+</head>
+<body>
+    <h1>Welcome to My Webpage</h1>
+    <p>This is a simple HTML document structure.</p>
+</body>
+</html>
+```
+
+---
+
+**Q4) What is semantic HTML? List some semantic and non-semantic elements.**
+
+**Semantic HTML** refers to the use of HTML elements that carry meaningful information about the content within them, both for the browser and developers. Semantic elements clearly describe their purpose in a web document and improve accessibility and search engine optimization (SEO).
+
+**Examples of Semantic Elements:**
+1. `<article>`: Represents a self-contained article.
+2. `<section>`: Defines a section in a document.
+3. `<header>`: Defines a header section.
+4. `<footer>`: Defines a footer section.
+5. `<nav>`: Represents navigation links.
+6. `<aside>`: Represents content aside from the main content (like a sidebar).
+
+**Non-Semantic Elements:**
+1. `<div>`: Generic container for content without any inherent meaning.
+2. `<span>`: Inline container for text or other elements without any specific meaning.
+
+**Benefits of Semantic HTML:**
+- Improves accessibility for screen readers.
+- Better for search engines to understand the content structure.
+- Makes code more readable and maintainable for developers.
+
+---
+
+**Q5) Why do we use meta tags?**
+
+**Meta tags** provide metadata about the HTML document to the browser and search engines. They are placed within the `<head>` section of an HTML document and are not visible to users.
+
+**Common uses of meta tags:**
+1. **Character Encoding**: Specify the character set of the document.
+   ```html
+   <meta charset="UTF-8">
+   ```
+2. **Viewport Settings**: Control the page’s width and scaling on different devices (especially for mobile).
+   ```html
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   ```
+3. **Description**: Provide a short description of the webpage for search engines.
+   ```html
+   <meta name="description" content="A brief description of the webpage.">
+   ```
+4. **Keywords**: Provide keywords related to the page content.
+   ```html
+   <meta name="keywords" content="HTML, CSS, JavaScript, Web Development">
+   ```
+5. **Author**: Specify the author of the document.
+   ```html
+   <meta name="author" content="John Doe">
+   ```
+
+Meta tags improve SEO (Search Engine Optimization), enhance accessibility, and ensure that the webpage behaves properly on various devices.
+
+---
+
+**Q6) What are IDs and classes in HTML, and how do they differ?**
+
+**IDs** and **classes** are used in HTML for targeting specific elements with CSS and JavaScript, but they serve different purposes and have key differences.
+
+- **ID**: A unique identifier for an HTML element.
+  - **Uniqueness**: An ID must be unique within a document. It cannot be used for more than one element.
+  - **CSS Selector**: IDs are targeted in CSS with a `#` symbol.
+  - **Example**:
+    ```html
+    <div id="header">Header Content</div>
+    ```
+    ```css
+    #header {
+        background-color: blue;
+    }
+    ```
+
+- **Class**: A general label that can be applied to multiple elements.
+  - **Reusability**: Classes can be used on multiple elements within the same document.
+  - **CSS Selector**: Classes are targeted in CSS with a `.` (dot) symbol.
+  - **Example**:
+    ```html
+    <div class="menu">Menu 1</div>
+    <div class="menu">Menu 2</div>
+    ```
+    ```css
+    .menu {
+        color: red;
+    }
+    ```
+
+### Key Differences:
+- **ID**: Must be unique in the document, used for a single element.
+- **Class**: Can be used multiple times for multiple elements.
+- **ID**: Higher specificity when used in CSS (overrides class styling).
+- **Class**: Lower specificity, allows for broad styling across elements.
+
+Both IDs and classes help with organizing styles and JavaScript functions, but IDs are generally used when targeting single elements, while classes are used when applying styles to groups of elements.
